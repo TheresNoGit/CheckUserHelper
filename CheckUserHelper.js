@@ -1,16 +1,15 @@
 /**
-* User script by [[User:Ladsgroup]], forked from 
-* {@link https://github.com/Ladsgroup/CheckUserHelper}
-* and now available at {@link https://tnt.toolforge.org/js/CheckUserHelper/CheckUserHelper.js}
-*
-* @desc Javascript gadget to help checkusers.
-* @author Ladsgroup
-* @author TheresNoGit Team <team@theresnogit.com>
-* @license GPL-3.0-only
-* @version 1.1.0
-* {@link https://github.com/TheresNoGit/CheckUserHelper}.
-*/
-
+ * User script by [[User:Ladsgroup]], forked from
+ * {@link https://github.com/Ladsgroup/CheckUserHelper}
+ * and now available at {@link https://tnt.toolforge.org/js/CheckUserHelper/CheckUserHelper.js}
+ *
+ * @desc Javascript gadget to help checkusers.
+ * @author Ladsgroup
+ * @author TheresNoGit Team <team@theresnogit.com>
+ * @license GPL-3.0-only
+ * @version 1.1.0
+ * {@link https://github.com/TheresNoGit/CheckUserHelper}.
+ */
 
 /*jshint esversion: 6 */
 /* global mw, jQuery */
