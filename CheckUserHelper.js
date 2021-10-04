@@ -1,11 +1,26 @@
-// Author: [[User:Ladsgroup]]
-// License: GPLv3
-// Source: https://github.com/Ladsgroup/CheckUserHelper
+/**
+* User script by [[User:Ladsgroup]], forked from 
+* {@link https://github.com/Ladsgroup/CheckUserHelper}
+* and now available at {@link https://tnt.toolforge.org/js/CheckUserHelper/CheckUserHelper.js}
+*
+* @desc Javascript gadget to help checkusers.
+* @author Ladsgroup
+* @author TheresNoGit Team <team@theresnogit.com>
+* @license GPL-3.0-only
+* @version 1.1.0
+* {@link https://github.com/TheresNoGit/CheckUserHelper}.
+*/
+
 
 /*jshint esversion: 6 */
 /* global mw, jQuery */
 
 (function ($) {
+  /**
+   * Creates the HTML table
+   * @param {object} data IP/UA data
+   * @return {void}
+   */
   function createTable(data) {
     let tbl = document.createElement("table");
     tbl.className = "wikitable";
@@ -79,6 +94,11 @@
     $("#checkuserform").after(tbl);
   }
 
+  /**
+   * Creates the wikitext table
+   * @param {object} data IP/UA data
+   * @return {string} Wikitext of table
+   */
   function createTableText(data) {
     let text = "{| class=wikitable\n! User!! IP(s)!! UA(s)\n|-\n";
 
@@ -117,6 +137,12 @@
     return text;
   }
 
+  /**
+   * Compares two IP addresses
+   * @param {string} a IP A
+   * @param {string} b IP B
+   * @return {number} num1 - num2
+   */
   function compareIPs(a, b) {
     const num1 =
       a.indexOf(".") > -1

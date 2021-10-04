@@ -1,8 +1,8 @@
 {
   "name": "checkuserhelper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Gadget.js",
+  "version": "1.1.0",
+  "description": "Javascript gadget to help checkusers",
+  "main": "CheckUserHelper.js",
   "dependencies": {
     "acorn-jsx": "^5.3.2",
     "ajv": "^6.12.6",
@@ -104,14 +104,15 @@
     "prettier": "2.4.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --debug",
+    "pretty": "prettier --check ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheresNoGit/CheckUserHelper.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ladsgroup, TheresNoTime et al",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/TheresNoGit/CheckUserHelper/issues"
   },
