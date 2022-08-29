@@ -188,7 +188,8 @@
       if (!user) {
         return;
       }
-      let ua = $(this).children("small").children(".mw-checkuser-agent").text();
+      //let ua = $(this).children("small").children(".mw-checkuser-agent").text();
+      let ua = $(this).find('.mw-checkuser-agent').text();
       let uas = [];
       if (!ua) {
         $(this)
@@ -202,7 +203,8 @@
       } else {
         uas = [ua];
       }
-      let ip = $(this).children("small").children("a").children("bdi").text();
+      //let ip = $(this).children("small").children("a").children("bdi").text();
+      let ip = $(this).children('.mw-checkuser-indented').children('small').children('a').children('bdi').text();
       let ips = [];
       if (!ip) {
         $(this)
